@@ -15,12 +15,11 @@ rms = {
 
 class restaurant(Resource):
     def get(self):
-        return "Welcome to RMS"
+        return rms['restaurant']
     
 # Mapping classes to different end points
-api.add_resource(restaurant, "/")
+api.add_resource(restaurant, "/restaurant")
 
 # Starting the server
 if __name__ == "__main__":
     app.run(debug=True)
-    
