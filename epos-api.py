@@ -17,9 +17,19 @@ class restaurant(Resource):
     def get(self):
         return rms['restaurant']
     
+class menu(Resource):
+    def get(self, item):
+        try:
+            return rms['menu'][item]
+        except KeyError:
+            return {}
+
+    
 # Mapping classes to different end points
 api.add_resource(restaurant, "/restaurant")
+api.add_resource(menu, "/menu/<item>")
 
 # Starting the server
 if __name__ == "__main__":
     app.run(debug=True)
+
