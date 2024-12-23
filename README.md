@@ -42,6 +42,14 @@
 
 ## docs
 
-- Flask api docs : `https://flask.palletsprojects.com/en/stable/api/`
-- Flask user guide : `https://flask.palletsprojects.com/en/stable/`
-- Flask restful docs : `https://flask-restful.readthedocs.io/en/latest/`
+- API Glossary : https://www.postman.com/api-glossary/
+- Flask api docs : https://flask.palletsprojects.com/en/stable/api/
+- Flask user guide : https://flask.palletsprojects.com/en/stable/
+- Flask restful docs : https://flask-restful.readthedocs.io/en/latest/
+
+
+## How to access
+
+- After starting the server, access the endpoints using a web browser or a tool like Postman:
+- For restaurant information: `http://127.0.0.1:5000/restaurant`
+- For menu items: `http://127.0.0.1:5000/menu/Wings`
