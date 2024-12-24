@@ -32,11 +32,8 @@
 ## Git Command
 
 - To add all file = `git add .`
-- 
 - To add any particular file = `git add <file_name>`
-- 
 - To commit = `git commit -m "commit message"`
-- 
 - To push the code = `git push origin main`
 
 ## most common HTTP methods
@@ -81,3 +78,53 @@ GET is the most commonly used safe method, but the HEAD method—which is used t
 - After starting the server, access the endpoints using a web browser or a tool like Postman:
 - For restaurant information: `http://127.0.0.1:5000/restaurant`
 - For menu items: `http://127.0.0.1:5000/menu/Wings`
+
+
+## Jinja:
+
+- Jinja2 is a template processing toolkit
+- Allows you to create and render text templates
+- Integrates well with Flask
+    - Use to render HTML based on templates
+
+### Tags:
+
+- `{% ... %}` for Statements
+- `{{ ... }}` for Expressions to print variable
+- `{# ... #}` for Comments not included in the template output
+
+#### Conditoinal:
+
+```
+{% if ... %}
+ ...
+{% else %}
+ ...
+{% endif %}
+```
+
+```
+{% if score > 80 %}
+I'm happy to inform you that you did very well on todays {{ test_name }}.
+{% else %}
+Your score on today's test {{ test_name }} could have been better. More stduy.
+{% endif %}
+YOu achieved {{ score }} out of {{ max_score }} points!
+```
+
+#### Loops:
+
+```
+{% for ... %}
+... 
+{% endfor %}
+```
+
+```
+topItems = ["Item 2", "Item 3", "Item 7"]
+
+{% for item in topItems %}
+{{item}}
+{% endfor %}
+```
+
